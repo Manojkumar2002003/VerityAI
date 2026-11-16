@@ -1,0 +1,182 @@
+# ==============================================================================
+# VerityAI - .gitignore
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Python & Virtual Environments
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ------------------------------------------------------------------------------
+# Frontend & Node.js
+# ------------------------------------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Frontend build outputs
+frontend/dist/
+frontend/build/
+frontend/.next/
+frontend/out/
+*.tsbuildinfo
+
+# ------------------------------------------------------------------------------
+# Environment Variables & Secrets (Local files must NEVER be committed)
+# ------------------------------------------------------------------------------
+.env
+.env.*
+*.env
+!.env.example
+!**/.env.example
+*.pem
+*.key
+*.cert
+*.crt
+secrets.json
+
+# ------------------------------------------------------------------------------
+# Datasets & Corpora (Do NOT commit raw/processed data to git)
+# ------------------------------------------------------------------------------
+ml/data/raw/
+ml/data/processed/
+ml/data/cache/
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.arrow
+*.jsonl
+*.h5
+*.hdf5
+*.tar.gz
+*.zip
+*.7z
+
+# Keep dataset manifests, documentation, and schema definitions tracked
+!ml/data/**/*.md
+!ml/data/**/*.json
+!ml/data/**/.gitkeep
+
+# ------------------------------------------------------------------------------
+# Machine Learning Models, Checkpoints & Large Binaries
+# ------------------------------------------------------------------------------
+checkpoints/
+models/
+ml/checkpoints/
+ml/models/
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.onnx
+*.pkl
+*.joblib
+*.h5
+*.tflite
+
+# Hugging Face and PyTorch cache directories
+hf_cache/
+transformers_cache/
+torch_cache/
+.cache/
+
+# ------------------------------------------------------------------------------
+# Experiment Tracking, Logs & Profiling
+# ------------------------------------------------------------------------------
+wandb/
+runs/
+mlruns/
+lightning_logs/
+*.log
+*.tfevents.*
+
+# ------------------------------------------------------------------------------
+# Testing & Code Coverage
+# ------------------------------------------------------------------------------
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+*.cover
+.hypothesis/
+frontend/coverage/
+
+# Linters and Type Checkers
+.mypy_cache/
+.ruff_cache/
+.dmypy.json
+dmypy.json
+
+# ------------------------------------------------------------------------------
+# Database & Runtime Data
+# ------------------------------------------------------------------------------
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+data/
+backend/data/
+
+# ------------------------------------------------------------------------------
+# IDE & Operating System Artifacts
+# ------------------------------------------------------------------------------
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains / PyCharm
+.idea/
+
+# Editors & OS temporary files
+*.swp
+*.swo
+*~
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,16 @@
+[run]
+source = app
+branch = True
+omit =
+    tests/*
+    .venv/*
+    */__pycache__/*
+
+[report]
+show_missing = True
+skip_covered = False
+exclude_lines =
+    pragma: no cover
+    def __repr__
+    if __name__ == .__main__.:
+    raise NotImplementedError

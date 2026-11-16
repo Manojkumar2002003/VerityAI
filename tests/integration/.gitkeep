@@ -1,0 +1,2 @@
+# tests/integration/
+# Integration tests across backend APIs, database interactions, and service boundaries.
